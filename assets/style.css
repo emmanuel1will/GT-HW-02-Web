@@ -1,0 +1,151 @@
+@media screen and (min-width:760px) {
+    .container-1 {
+        display: flex;
+        /*
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        */
+        flex-direction:column;
+        flex-wrap:wrap;
+        
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+
+}
+
+.container-1 header, section, footer {
+    border: 1px #ccc solid;
+    padding:10px;
+}
+main section {
+    
+}
+main section article {
+
+}
+
+header h1 {
+    flex: 1;
+    flex-basis: 300px;
+}
+header h1::after {
+    content: 'Course Portfolio';
+    margin-left: 10px;
+}
+header nav {
+    flex: 3;
+    display: flex;
+}
+header nav a {
+    flex: 1;
+}
+#nav-01::after{
+    content: 'about me';
+}
+#nav-02::after{
+    content: 'my work';
+}
+#nav-03::after{
+    content: 'contact me';
+}
+h2 {
+    text-transform: capitalize;
+}
+.hero {
+    height: 450px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: #1a54aca8;
+    background-size: cover;
+    background-position: center;
+}
+.hero::after {
+    content: 'Welcome to willOnCode';
+}
+.box1 {
+    flex: 1;
+}
+.box2 {
+    flex: 1;
+}
+.box3 {
+    flex: 1;
+}
+.box3 figure figcaption::after {
+    content: 'Emmanuel Williams';
+    font-size: 23px;
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    background:grey;
+    color: navy;
+    flex: 1 0 0;
+    padding: 10px;
+    border: 1px solid;
+}
+
+#feat figure {
+    min-width:750px;
+    width: 100%;
+}
+#feat img {
+    min-width:750px;
+    width: 100%;
+}
+.card figure {
+    min-width: 400px;
+    width:100%;
+    background: #e0e0e0;
+}
+/*
+.card figure::after {
+    content: '300x250';
+    color: #b4b4b4;
+    font-size: 34px;
+    font-weight: bold;
+}
+*/
+.card img {
+    min-width: 400px;
+    width: 100%;
+}
+#emailme::after {
+    content:'emmanuel1.will@pm.me'
+}
+#callme::after {
+    content:'(555) 555-5555'
+}
+footer {
+    padding: 30px;
+    clear:both;
+}
+footer h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+footer h3:after {
+    content: 'will️OnCode maintained by Emmanuel Williams';
+}
+footer small {
+    color: #afaaaa;;
+}
+footer small:after {
+    content: ' 2021 willOnCode';
+}
